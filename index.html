@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Adivina el número</title>
+
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+
+    <!--<style>
+    </style>-->
+    
+  </head>
+
+  <body>
+    <h1>Juego de adivinanzas</h1>
+
+    <p>Hemos seleccionado un número aleatorio entre 1 y 50.
+    Solo tienes 10 turnos o menos para ganar. Te diremos 
+    si tu número es más alto o mas bajo.
+    <br>
+    <br>
+    Buena suerte! </p>
+
+    <div class="form">
+      <label for="guessField">Ingresa número: </label>
+      <input type="text" min="1" max="50" required id="guessField" class="guessField">
+      <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+      <p class="guesses"></p>
+      <p class="lastResult"></p>
+      <p class="lowOrHi"></p>
+    </div>
+
+    <script src= 'main.js'></script>
+  </body>
+</html>
